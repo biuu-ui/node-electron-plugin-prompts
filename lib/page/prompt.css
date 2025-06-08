@@ -13,89 +13,6 @@ body
     display: none;
 }
 
-/* Counter mode */
-span
-{
-    cursor: pointer;
-}
-
-/* For Counter Prompt */
-.minus, .plus
-{
-    background: rgb(0, 0, 0);
-    user-select: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    padding: 8px 5px;
-    border: 1px solid #686868;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-}
-
-select:hover
-{
-    cursor: pointer;
-}
-
-/* For Select Prompt */
-option
-{
-    background-color: #07070C;
-}
-
-/** Keybind mode */
-div.keybind
-{
-    display: grid;
-    grid-template-columns: max-content max-content max-content;
-    row-gap: 20px;
-    column-gap: 10px;
-    margin: auto 0;
-    justify-content: center;
-}
-
-div.keybind button
-{
-    width: auto;
-}
-
-div.keybind label
-{
-    text-align: right;
-}
-
-div.keybind label:after
-{
-    content: ":";
-}
-
-/*
-    Main Form
-*/
-
-#form
-{
-    width: 100%;
-    padding-top: 0.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/*
-    Container > Primary
-*/
-
-.primary
-{
-    overflow: hidden;
-    justify-content: center;
-    display: flex;
-    height: 100%;
-    overflow-y: hidden;
-}
-
 /*
     Main Window Label
 */
@@ -131,58 +48,80 @@ h2 > .label-desc
 }
 
 /*
-    Added to labels that don't have a description
+    Container > Primary
 */
 
-.p-btm
+#container
 {
-    margin-bottom: 0.9rem;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    overflow-y: hidden;
 }
 
-/*
-    Cotainer > Elements
-*/
-
-.elements
-{
+#data-container {
     text-align: left;
 }
 
-/*
-    Cotainer > Elements > Label
-*/
-
-.elements > .label
-{
+#data-container > label {
     text-align: left;
     font-size: 0.95rem;
     padding-bottom: 0px;
     font-weight: 200;
 }
 
-/*
-    Cotainer > Elements > Description
-*/
-
-.elements > .description
-{
+#data-container > description {
     text-align: left;
-    font-size: 0.915rem;
+    font-size: 0.83rem;
+    padding-bottom: 10px;
+    opacity: 0.5;
     font-weight: 100;
+}
+
+#label {
     max-width: 100%;
     max-height: 100%;
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.8em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #959595;
+    text-align: left;
+    padding: 0 0 0 0;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#description {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 0.8em;
+    padding: 0 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.7em;
+}
+
+#data {
+    border-radius: 2px;
+    background: #fff;
+    width: 90%;
+    padding: 0.4em 0.5em;
+    border: 1px solid black;
+    min-height: 2em;
+    margin: 0 0 1.2em;
+}
+
+select#data {
+    height: 2em;
 }
 
 /*
     Buttons > Position on Window
 */
 
-.buttons
+#buttons
 {
     text-align: right;
     padding: 0 0 0 0;
@@ -192,14 +131,15 @@ h2 > .label-desc
     Buttons > General Look > Normal
 */
 
-.buttons > button,
-.buttons > input[type="submit"]
+#buttons > button,
+#buttons > input[type="submit"]
 {
-    padding: 9px 15px 7px 15px;
-    border-radius: 2px;
-    border: 0;
-    margin: 0 0 0 0.5em;
-    font-size: 1rem;
+    padding: 9px 15px 7px 15px !important;
+    border-radius: 2px !important;
+    border: 0 !important;
+    margin: 0 0 0 0.5em !important;
+    font-size: 0.85rem !important;
+    font-weight: 400;
     text-align: center;
     vertical-align: middle;
     display: inline-flex;
@@ -210,8 +150,8 @@ h2 > .label-desc
     Buttons > General Look > Hover
 */
 
-.buttons > button:hover,
-.buttons > button:focus
+#buttons > button:hover,
+#buttons > button:focus
 {
     cursor: pointer;
 }
@@ -220,7 +160,7 @@ h2 > .label-desc
     Vuttons; ok, custom > State > Normal
 */
 
-.btn-ok, .btn-custom
+#ok, #custom
 {
     background-color: #286256;
     color: #FFFFFF;
@@ -230,7 +170,7 @@ h2 > .label-desc
     Vuttons; ok, custom > State > Hover
 */
 
-.btn-ok:hover, .btn-custom:hover
+#ok:hover, #custom:hover
 {
     background-color: #3c8375;
     color: #FFFFFF;
@@ -240,37 +180,7 @@ h2 > .label-desc
     Vuttons; ok, custom > State > Focus
 */
 
-.btn-ok:focus, .btn-custom:focus
-{
-    outline: rgba(60, 0, 0, 0.4) solid 2px;
-    filter: brightness(1.25);
-}
-
-/*
-    Vuttons; ok, clear > Normal
-*/
-
-.btn-clear
-{
-    background-color: #325391;
-    color: #FFFFFF;
-}
-
-/*
-    Vuttons; ok, clear > Hover
-*/
-
-.btn-clear:hover
-{
-    background-color: #4068b1;
-    color: #FFFFFF;
-}
-
-/*
-    Vuttons; ok, clear > Focus
-*/
-
-.btn-clear:focus
+#ok:focus, #custom:focus
 {
     outline: rgba(60, 0, 0, 0.4) solid 2px;
     filter: brightness(1.25);
@@ -280,7 +190,7 @@ h2 > .label-desc
     Vuttons; cancel, clear > State > Normal
 */
 
-.btn-cancel, .clearButton
+#cancel
 {
     background-color: #b82355;
     color: #FFFFFF;
@@ -290,7 +200,7 @@ h2 > .label-desc
     Vuttons; cancel, clear > State > Hover
 */
 
-.btn-cancel:hover, .clearButton:hover
+#cancel:hover
 {
     background-color: #d8326a;
     color: #FFFFFF;
@@ -300,17 +210,156 @@ h2 > .label-desc
     Vuttons; cancel, clear > State > Focus
 */
 
-.btn-cancel:focus, .clearButton:focus
+#cancel:focus
 {
     outline: rgba(60, 0, 0, 0.4) solid 2px;
     filter: brightness(1.25);
 }
 
 /*
-
+    Vuttons; ok, clear > Normal
 */
 
-.dropdown
+.clearButton
+{
+    background-color: #325391;
+    color: #FFFFFF;
+}
+
+/*
+    Vuttons; ok, clear > Hover
+*/
+
+.clearButton:hover
+{
+    background-color: #4068b1;
+    color: #FFFFFF;
+}
+
+/*
+    Vuttons; ok, clear > Focus
+*/
+
+.clearButton:focus
+{
+    outline: rgba(60, 0, 0, 0.4) solid 2px;
+    filter: brightness(1.25);
+}
+
+
+
+
+
+
+
+#ok:hover, #ok:focus,
+#custom:hover, #custon:focus
+#cancel:hover, #cancel:focus {
+    outline: rgba(60, 0, 0, 0.4) solid 2px;
+    filter: brightness(1.25);
+}
+
+#cancel, .clearButton {
+    background-color: #b82355;
+    color: #FFFFFF;
+}
+
+#ok, #custom, .clearButton {
+    background-color: #286256;
+    color: #FFFFFF;
+}
+
+/* Counter mode */
+span {
+    cursor: pointer;
+}
+
+/* For Counter Prompt */
+.minus, .plus {
+    background: rgb(0, 0, 0);
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 8px 5px;
+    border: 1px solid #686868;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+/* For Select Prompt */
+option {
+    background-color: #07070C;
+}
+
+/** Keybind mode */
+div.keybind {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    row-gap: 20px;
+    column-gap: 10px;
+    margin: auto 0;
+    justify-content: center;
+}
+
+div.keybind button {
+    width: auto;
+}
+
+div.keybind label {
+    text-align: right;
+}
+
+div.keybind label:after {
+    content: ":";
+}
+
+/* For Keybind Prompt */
+.clearButton:focus {
+    outline: none;
+}
+
+.clearButton:hover {
+    background-color: rgb(5, 5, 5);
+}
+
+.keybindData:hover {
+    border: 1px solid rgb(56, 0, 0);
+}
+
+.keybindData:focus {
+    outline: 3px solid #1E0919;
+    border: 1px solid rgb(56, 0, 0);
+}
+
+/*
+    Main Form
+*/
+
+#form
+{
+    width: 100%;
+    padding-top: 0.5rem !important;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+
+.label-desc
+{
+    padding-top: 4px;
+    padding-bottom: 7px;
+    font-size: 0.90rem;
+    font-weight: 200;
+    white-space: normal;
+    color: #c4c4c4;
+}
+
+#data, .keybindData
 {
     background: rgb(50 50 50);
     color: #45b79f;
@@ -325,7 +374,7 @@ h2 > .label-desc
     font-weight: 100;
 }
 
-.dropdown option
+#data option
 {
     background: rgb(34, 34, 34);
     color: #FFF;
@@ -335,32 +384,22 @@ h2 > .label-desc
     border-radius: 0;
 }
 
-.dropdown:hover
+#data:hover
 {
-    border: 1px solid rgb(56, 0, 0);
+    border: 1px solid rgb(85, 85, 85);
 }
 
-.dropdown:focus
+#data:focus
 {
-    outline: 1px solid #ffffff34;
+    outline: unset;
+    border: 1px solid rgb(85, 85, 85);
 }
 
-.item
-{
-    background: rgb(50 50 50);
-    color: #45b79f;
-    border: 1px solid rgb(54, 54, 54);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    font-size: 12pt;
-    font-weight: 100;
-}
+/*
+    Added to labels that don't have a description
+*/
 
-.item:focus
+.p-btm
 {
-    outline: 1px solid #ffffff34;
+    margin-bottom: 0.9rem;
 }
