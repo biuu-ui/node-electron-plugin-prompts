@@ -160,7 +160,7 @@ export default
             'n/no-extraneous-require': [
                 'error',
                 {
-                    'allowModules': ['electron', 'electron-notarize'],
+                    'allowModules': ['electron', 'electron-notarize', 'prompt', 'uuid' ],
                     'resolvePaths': [],
                     'tryExtensions': []
                 }
@@ -178,11 +178,11 @@ export default
             'n/no-unpublished-bin': 'error',
             'n/no-unpublished-import': [ 'error',
             {
-                "allowModules": [ 'electron' ]
+                "allowModules": [ 'electron', 'electron-notarize', 'prompt', 'uuid' ]
             }],
             'n/no-unpublished-require': [ 'error',
             {
-                "allowModules": [ 'electron' ]
+                "allowModules": [ 'electron', 'electron-notarize', 'prompt', 'uuid' ]
             }],
             'n/no-unsupported-features/es-builtins': 'error',
             'n/no-unsupported-features/es-syntax': 'error',
