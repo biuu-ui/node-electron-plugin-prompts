@@ -1,4 +1,4 @@
-# ✨ Custom Electron Prompt ✨
+# ✨ Electron Dialogs ✨
 
 [![NPM Version](https://img.shields.io/npm/v/custom-electron-prompt)](https://www.npmjs.com/package/custom-electron-prompt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Araxeus/custom-electron-prompt/blob/main/LICENSE)
@@ -7,15 +7,31 @@
 
 Custom prompt for Electron made easy with various templates
 
-There are currently 5 types available: Input / Keybind / Counter / Select / MultiInput
+There are currently 5 types available:
+- Input
+- Keybind
+- Counter
+- Select
+- MultiInput
 
 There is also an option for a button with user-defined `onclick` function.
 
+<br />
+
+---
+
+<br />
 
 ## Example of a Simple Prompt from Input Type
 
 ![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Input/Input.png)
 ![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Input/InputDark.png)
+
+<br />
+
+---
+
+<br />
 
 ## Usage
 
@@ -32,6 +48,7 @@ There is also an option for a button with user-defined `onclick` function.
    bun add custom-electron-prompt
    ```
 
+<br />
 
 * 2: Import prompt
 
@@ -50,6 +67,8 @@ There is also an option for a button with user-defined `onclick` function.
    Promise resolve returns the input or returns null if prompt was canceled
 
        On error, Prompise reject returns custom error message
+
+<br />
 
 ### Simple Input Example
 
@@ -75,9 +94,15 @@ prompt({
 .catch(console.error);
 ```
 
+<br />
+
+---
+
+<br />
+
 ## Special Prompt Types
 
-----
+<br />
 
 ### keybind
 
@@ -91,6 +116,8 @@ keybindOptions: [
     { value: "pasteAccelerator", label: "Paste", default: "Ctrl+V" }
 ]
 ```
+
+<br />
 
 Return an array made of objects in format
 
@@ -135,7 +162,7 @@ prompt({
 ![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Keybind/KeybindDark.png)
 </details>
 
-----
+<br />
 
 ### counter
 
@@ -178,7 +205,7 @@ prompt({
 ![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Counter/CounterDark.png)
 </details>
 
-----
+<br />
 
 ### select
 
@@ -225,7 +252,7 @@ prompt({
 ![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Select/SelectDarkOpen.png)
 </details>
 
-----
+<br />
 
 ### multiInput
 
@@ -291,7 +318,11 @@ Without `selectOptions`:
 
 </details>
 
-----
+<br />
+
+---
+
+<br />
 
 ## Options object (optional)
 
@@ -308,6 +339,8 @@ Without `selectOptions`:
 | keybindOptions     | (optional, object)  Required if type=keybind. represent an array of objects in format: `{type: %string%, value: %string%, default: %string%}`. `default` has to be a valid accelerator to work                                                                 |
 | multiInputOptions     | (optional, object) an Array of objects having options for every input, format: `[{inputAttrs:{type:'email'}},{inputAttrs:{type:'password'}}]`, `[object, object]` to use it without passing any options simply `[{},{},{}]`, just create x amount of empty objects to add x inputs.                                       |
 | button       | (optional, object) adds a button after the success(OK) with a custom label, onClick and attributes. Object format: `{label: 'myLabel', click: () => alert("click"), attrs: {style: 'background: black'}}`, `{label: %string%, click: %function%, attrs: %object%}`|
+
+<br />
 
 ### Original options:
 
@@ -333,9 +366,13 @@ Without `selectOptions`:
 
 If not supplied, it uses the defaults listed in the table above.
 
+<br />
+
 ### parentBrowserWindow (optional)
 
 The window in which to display the prompt on. If not supplied, the parent window of the prompt will be null.
+
+<br />
 
 ### customScript (optional)
 
@@ -347,7 +384,8 @@ module.exports = () => {
     // So you can use front features like `document.querySelector`
 };
 ```
-----
+
+<br />
 
 ### Custom/Extra Button (optional)
 
