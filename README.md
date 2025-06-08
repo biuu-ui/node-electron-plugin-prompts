@@ -1,13 +1,87 @@
-# ✨ Electron Dialogs ✨
+<div align="center">
+<h6>Create customized dialog prompts using templates.</h6>
+<h1>🔅 Electron Dialogs 🔅</h1>
+<br />
 
-[![NPM Version](https://img.shields.io/npm/v/custom-electron-prompt)](https://www.npmjs.com/package/custom-electron-prompt)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Araxeus/custom-electron-prompt/blob/main/LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Araxeus/custom-electron-prompt)
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://araxeus.github.io/custom-electron-prompt)
+<p>
 
-Custom prompt for Electron made easy with various templates
+**Electron Dialogs** is a forked version of [custom-electron-prompt](https://github.com/Araxeus/custom-electron-prompt), which has been modified to add new functionality, fix bugs, and maintain dependency updates.
 
-There are currently 5 types available:
+<br />
+
+This library is packaged with [ntfy-desktop](https://github.com/Aetherinox/ntfy-desktop)
+
+</p>
+
+<br />
+
+<div align="center">
+
+<!-- prettier-ignore-start -->
+[![Version][github-version-img]][github-version-uri]
+[![Version][npm-version-img]][npm-version-uri]
+[![Build Status][github-tests-img]][github-tests-uri]
+[![Downloads][github-downloads-img]][github-downloads-uri]
+[![Size][github-size-img]][github-size-img]
+[![Last Commit][github-commit-img]][github-commit-img]
+[![Contributors][contribs-all-img]](#contributors-)
+<!-- prettier-ignore-end -->
+
+</div>
+
+<br />
+
+<div align="center">
+
+<img src="https://github.com/Aetherinox/toasted-notifier/assets/118329232/8ed8330f-2f1f-43e1-9264-cb5ead9314f0" width="630">
+
+<br />
+
+<img src="https://github.com/Aetherinox/toasted-notifier/assets/118329232/ca453129-bf45-4b92-9979-447219b7df02" width="630">
+
+<br />
+
+<img src="https://github.com/Aetherinox/toasted-notifier/assets/118329232/f2ec9a0f-07f0-4cef-b791-99cf97a9fa39" width="630">
+
+</div>
+
+</div>
+
+<br />
+
+---
+
+<br />
+
+- [About](#about)
+- [Example of a Simple Prompt from Input Type](#example-of-a-simple-prompt-from-input-type)
+- [Usage](#usage)
+  - [Simple Input Example](#simple-input-example)
+- [Special Prompt Types](#special-prompt-types)
+  - [keybind](#keybind)
+  - [counter](#counter)
+  - [select](#select)
+  - [multiInput](#multiinput)
+- [Options object (optional)](#options-object-optional)
+  - [⚠️ New options :](#️-new-options-)
+  - [Original options:](#original-options)
+  - [parentBrowserWindow (optional)](#parentbrowserwindow-optional)
+  - [customScript (optional)](#customscript-optional)
+  - [Custom/Extra Button (optional)](#customextra-button-optional)
+- [Contributors ✨](#contributors-)
+
+
+<br />
+
+---
+
+<br />
+
+## About
+The `Electron Dialogs` node package allows you to generate dialog boxes / prompts for your electron powered projects.
+
+There are currently **5 types** available:
+
 - Input
 - Keybind
 - Counter
@@ -15,6 +89,13 @@ There are currently 5 types available:
 - MultiInput
 
 There is also an option for a button with user-defined `onclick` function.
+
+<br />
+
+> Disclaimer:
+> This node package has had two previous owners:
+> - [custom-electron-prompt](https://github.com/Araxeus/custom-electron-prompt)
+> - [electron-prompt](https://github.com/p-sam/electron-prompt)
 
 <br />
 
@@ -448,8 +529,128 @@ await prompt({
 ![](https://github.com/amunim/custom-electron-prompt/blob/main/screenshots/multiInput/button.PNG)
 </details>
 
-----
+<br />
 
-> Disclaimer: this package is a highly modified version of  [electron-prompt](https://github.com/p-sam/electron-prompt)
->
-> The author of that package didn't want much contributions or changes, but you are more than welcome to contribute and create new stable prompt features over here :)
+---
+
+<br />
+
+## Contributors ✨
+
+We are always looking for contributors. If you feel that you can provide something useful to this project, then we'd love to review your suggestion. Before submitting your contribution, please review the following resources:
+
+- [Pull Request Procedure](.github/PULL_REQUEST_TEMPLATE.md)
+- [Contributor Policy](CONTRIBUTING.md)
+
+<br />
+
+Want to help but can't write code?
+
+- Review [active questions by our community](https://github.com/Aetherinox/node-electron-dialogs/labels/❔%20Question) and answer the ones you know.
+
+<br />
+
+The following people have helped keep this project going:
+
+<br />
+
+<div align="center">
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![Contributors][contribs-all-img]](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><a href="https://github.com/Aetherinox"><img src="https://avatars.githubusercontent.com/u/118329232?v=4&s=40" width="80px;" alt="Aetherinox"/><br /><sub><b>Aetherinox</b></sub></a><br /><a href="https://github.com/Aetherinox/electron-dialogs/commits?author=Aetherinox" title="Code">💻</a> <a href="#projectManagement-Aetherinox" title="Project Management">📆</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<br />
+<br />
+
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<br />
+
+---
+
+<br />
+
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- BADGE > GENERAL -->
+  [general-npmjs-uri]: https://npmjs.com
+  [general-nodejs-uri]: https://nodejs.org
+  [general-npmtrends-uri]: https://npmtrends.com/@aetherinox/electron-dialogs
+
+<!-- BADGE > VERSION > GITHUB -->
+  [github-version-img]: https://img.shields.io/github/v/tag/aetherinox/node-electron-dialogs?logo=GitHub&label=Version&color=ba5225
+  [github-version-uri]: https://github.com/Aetherinox/node-electron-dialogs/releases
+
+<!-- BADGE > VERSION > NPMJS -->
+  [npm-version-img]: https://img.shields.io/npm/v/@aetherinox/electron-dialogs?logo=npm&label=Version&color=ba5225
+  [npm-version-uri]: https://npmjs.com/package/@aetherinox/electron-dialogs
+
+<!-- BADGE > VERSION > PYPI -->
+  [pypi-version-img]: https://img.shields.io/pypi/v/electron-dialogs
+  [pypi-version-uri]: https://pypi.org/project/electron-dialogs/
+
+<!-- BADGE > LICENSE > MIT -->
+  [license-mit-img]: https://img.shields.io/badge/MIT-FFF?logo=creativecommons&logoColor=FFFFFF&label=License&color=9d29a0
+  [license-mit-uri]: https://github.com/Aetherinox/node-electron-dialogs/blob/main/LICENSE
+
+<!-- BADGE > GITHUB > DOWNLOAD COUNT -->
+  [github-downloads-img]: https://img.shields.io/github/downloads/Aetherinox/node-electron-dialogs/total?logo=github&logoColor=FFFFFF&label=Downloads&color=376892
+  [github-downloads-uri]: https://github.com/Aetherinox/node-electron-dialogs/releases
+
+<!-- BADGE > NPMJS > DOWNLOAD COUNT -->
+  [npmjs-downloads-img]: https://img.shields.io/npm/dw/%40aetherinox%2Felectron-dialogs?logo=npm&&label=Downloads&color=376892
+  [npmjs-downloads-uri]: https://npmjs.com/package/@aetherinox/electron-dialogs
+
+<!-- BADGE > GITHUB > DOWNLOAD SIZE -->
+  [github-size-img]: https://img.shields.io/github/repo-size/Aetherinox/node-electron-dialogs?logo=github&label=Size&color=59702a
+  [github-size-uri]: https://github.com/Aetherinox/node-electron-dialogs/releases
+
+<!-- BADGE > NPMJS > DOWNLOAD SIZE -->
+  [npmjs-size-img]: https://img.shields.io/npm/unpacked-size/@aetherinox/electron-dialogs/latest?logo=npm&label=Size&color=59702a
+  [npmjs-size-uri]: https://npmjs.com/package/@aetherinox/electron-dialogs
+
+<!-- BADGE > CODECOV > COVERAGE -->
+  [codecov-coverage-img]: https://img.shields.io/codecov/c/github/Aetherinox/node-electron-dialogs?token=MPAVASGIOG&logo=codecov&logoColor=FFFFFF&label=Coverage&color=354b9e
+  [codecov-coverage-uri]: https://codecov.io/github/Aetherinox/node-electron-dialogs
+
+<!-- BADGE > ALL CONTRIBUTORS -->
+  [contribs-all-img]: https://img.shields.io/github/all-contributors/Aetherinox/node-electron-dialogs?logo=contributorcovenant&color=de1f6f&label=contributors
+  [contribs-all-uri]: https://github.com/all-contributors/all-contributors
+
+<!-- BADGE > GITHUB > BUILD > NPM -->
+  [github-build-img]: https://img.shields.io/github/actions/workflow/status/Aetherinox/node-electron-dialogs/package-release.yml?logo=github&logoColor=FFFFFF&label=Build&color=%23278b30
+  [github-build-uri]: https://github.com/Aetherinox/node-electron-dialogs/actions/workflows/package-release.yml
+
+<!-- BADGE > GITHUB > BUILD > Pypi -->
+  [github-build-pypi-img]: https://img.shields.io/github/actions/workflow/status/Aetherinox/node-electron-dialogs/release-pypi.yml?logo=github&logoColor=FFFFFF&label=Build&color=%23278b30
+  [github-build-pypi-uri]: https://github.com/Aetherinox/node-electron-dialogs/actions/workflows/release-pypi.yml
+
+<!-- BADGE > GITHUB > TESTS -->
+  [github-tests-img]: https://img.shields.io/github/actions/workflow/status/Aetherinox/node-electron-dialogs/package-tests.yml?logo=github&label=Tests&color=2c6488
+  [github-tests-uri]: https://github.com/Aetherinox/node-electron-dialogs/actions/workflows/package-tests.yml
+
+<!-- BADGE > GITHUB > COMMIT -->
+  [github-commit-img]: https://img.shields.io/github/last-commit/Aetherinox/node-electron-dialogs?logo=conventionalcommits&logoColor=FFFFFF&label=Last%20Commit&color=313131
+  [github-commit-uri]: https://github.com/Aetherinox/node-electron-dialogs/commits/main/
+
+<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
