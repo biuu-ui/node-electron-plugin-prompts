@@ -1,0 +1,76 @@
+{
+    "name": "electron-dialogs",
+    "version": "1.6.0",
+    "description": "Create custom dialogs / prompts for Electron using templates",
+    "author": "Aetherinox",
+    "homepage": "https://github.com/Aetherinox/node-electron-dialogs",
+    "license": "MIT",
+    "main": "lib/index",
+    "build": {
+        "appId": "com.electron-prompts.id"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Aetherinox/node-electron-dialogs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Aetherinox/node-toasted-notifier/issues"
+    },
+    "funding": [
+        {
+            "type": "individual",
+            "url": "https://buymeacoffee.com/aetherinox"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Aetherinox",
+            "email": "118329232+Aetherinox@users.noreply.github.com",
+            "url": "https://github.com/Aetherinox"
+        }
+    ],
+    "keywords": [
+        "electron",
+        "input",
+        "select",
+        "counter",
+        "dropdown",
+        "accelerator",
+        "keybind",
+        "prompt",
+        "dialog"
+    ],
+    "scripts": {
+        "release": "npm publish",
+        "lint": "eslint example/*.js lib/*.js root.cjs root.mjs",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "root": "node root.mjs",
+        "root:generate": "node root.mjs generate",
+        "root:root": "npx --quiet env-cmd --no-override node root.mjs",
+        "root:uuid": "npx --quiet env-cmd --no-override node root.mjs uuid",
+        "root:guid": "npx --quiet env-cmd --no-override node root.mjs guid",
+        "root:version": "node -p require('./package.json').version;"
+    },
+    "files": [
+        "lib/"
+    ],
+    "peerDependencies": {
+        "electron": ">=10.0.0"
+    },
+    "devDependencies": {
+        "@types/uuid": "^10.0.0",
+        "uuid": "^11.1.0",
+        "@aetherinox/noxenv": "^1.1.1",
+        "env-cmd": "^10.1.0",
+        "eslint": "9.28.0",
+        "eslint-plugin-chai-friendly": "^1.0.1",
+        "eslint-plugin-import": "2.31.0",
+        "eslint-plugin-n": "17.19.0",
+        "eslint-plugin-promise": "7.2.1",
+        "@stylistic/eslint-plugin": "^4.4.1"
+    }
+}
