@@ -1,11 +1,11 @@
 <div align="center">
 <h6>Create customized dialog prompts using templates.</h6>
-<h1>🔅 Electron Dialogs 🔅</h1>
+<h1>🔅 Electron Prompts & Dialogs 🔅</h1>
 <br />
 
 <p>
 
-**Electron Dialogs** is a forked version of [custom-electron-prompt](https://github.com/Araxeus/custom-electron-prompt), which has been modified to add new functionality, fix bugs, and maintain dependency updates.
+**Electron Dialogs** is a forked version of [custom-electron-prompt](https://github.com/Aetherinox/node-electron-plugin-prompts), which has been modified to add new functionality, fix bugs, and maintain dependency updates.
 
 <br />
 
@@ -94,7 +94,7 @@ There is also an option for a button with user-defined `onclick` function.
 
 > Disclaimer:
 > This node package has had two previous owners:
-> - [custom-electron-prompt](https://github.com/Araxeus/custom-electron-prompt)
+> - [custom-electron-prompt](https://github.com/Aetherinox/node-electron-plugin-prompts)
 > - [electron-prompt](https://github.com/p-sam/electron-prompt)
 
 <br />
@@ -105,8 +105,8 @@ There is also an option for a button with user-defined `onclick` function.
 
 ## Example of a Simple Prompt from Input Type
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Input/Input.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Input/InputDark.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Input/Input.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Input/InputDark.png)
 
 <br />
 
@@ -118,15 +118,15 @@ There is also an option for a button with user-defined `onclick` function.
 
 * 1: Install the npm package to your project directory with
   ```bash
-  npm install custom-electron-prompt
+  npm install electron-plugin-prompts
   ```
   or
   ```bash
-   yarn add custom-electron-prompt
+   yarn add electron-plugin-prompts
    ```
   or
   ```bash
-   bun add custom-electron-prompt
+   bun add electron-plugin-prompts
    ```
 
 <br />
@@ -134,7 +134,7 @@ There is also an option for a button with user-defined `onclick` function.
 * 2: Import prompt
 
   ```javascript
-  const prompt = require('custom-electron-prompt')
+  const prompt = require('electron-plugin-prompts')
   ```
 
 * 3: Create a prompt
@@ -236,11 +236,11 @@ prompt({
  <details>
   <summary> Screenshots </summary>
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Keybind/Keybind3.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Keybind/Keybind.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Keybind/Keybind3.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Keybind/Keybind.png)
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Keybind/KeybindDark3.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Keybind/KeybindDark.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Keybind/KeybindDark3.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Keybind/KeybindDark.png)
 </details>
 
 <br />
@@ -282,8 +282,8 @@ prompt({
  <details>
   <summary> Screenshots </summary>
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Counter/Counter.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Counter/CounterDark.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Counter/Counter.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Counter/CounterDark.png)
 </details>
 
 <br />
@@ -326,11 +326,11 @@ prompt({
  <details>
   <summary> Screenshots </summary>
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Select/SelectClosed.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Select/SelectOpen.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Select/SelectClosed.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Select/SelectOpen.png)
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Select/SelectDarkClosed.png)
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/Select/SelectDarkOpen.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Select/SelectDarkClosed.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/Select/SelectDarkOpen.png)
 </details>
 
 <br />
@@ -390,12 +390,12 @@ prompt({
 
 With `selectOptions`:
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/multiInput/multiInputSelect.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/multiInput/multiInputSelect.png)
 
 Without `selectOptions`:
 *This screenshot also contains a custom button.*
 
-![](https://github.com/Araxeus/custom-electron-prompt/blob/main/screenshots/multiInput/button.png)
+![](https://github.com/Aetherinox/node-electron-plugin-prompts/blob/main/screenshots/multiInput/button.png)
 
 </details>
 

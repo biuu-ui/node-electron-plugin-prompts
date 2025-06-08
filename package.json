@@ -1,9 +1,9 @@
 {
-    "name": "electron-dialogs",
+    "name": "electron-plugin-prompts",
     "version": "1.6.0",
-    "description": "Create custom dialogs / prompts for Electron using templates",
+    "description": "Create custom dialogs, prompts, or forms for Electron using easy-to-use HTML and CSS templates.",
     "author": "Aetherinox",
-    "homepage": "https://github.com/Aetherinox/node-electron-dialogs",
+    "homepage": "https://github.com/Aetherinox/node-electron-plugin-prompts",
     "license": "MIT",
     "main": "lib/index",
     "build": {
@@ -14,10 +14,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/Aetherinox/node-electron-dialogs.git"
+        "url": "git+ssh://git@github.com/Aetherinox/node-electron-plugin-prompts.git"
     },
     "bugs": {
-        "url": "https://github.com/Aetherinox/node-toasted-notifier/issues"
+        "url": "https://github.com/Aetherinox/node-electron-plugin-prompts/issues"
     },
     "funding": [
         {
@@ -62,15 +62,18 @@
         "electron": ">=10.0.0"
     },
     "devDependencies": {
-        "@types/uuid": "^10.0.0",
-        "uuid": "^11.1.0",
         "@aetherinox/noxenv": "^1.1.1",
+        "@stylistic/eslint-plugin": "^4.4.1",
+        "@types/uuid": "^10.0.0",
         "env-cmd": "^10.1.0",
         "eslint": "9.28.0",
         "eslint-plugin-chai-friendly": "^1.0.1",
         "eslint-plugin-import": "2.31.0",
         "eslint-plugin-n": "17.19.0",
         "eslint-plugin-promise": "7.2.1",
-        "@stylistic/eslint-plugin": "^4.4.1"
+        "uuid": "^11.1.0"
+    },
+    "dependencies": {
+        "electron-prompt": "^1.7.0"
     }
 }
