@@ -116,6 +116,24 @@ h1, h2
     color: #f90e58;
 }
 
+/*
+    Label under heading
+*/
+
+h2 > .label-desc
+{
+    padding-top: 4px;
+    padding-bottom: 7px;
+    font-size: 0.90rem;
+    font-weight: 200;
+    white-space: normal;
+    color: #c4c4c4;
+}
+
+/*
+    Added to labels that don't have a description
+*/
+
 .p-btm
 {
     margin-bottom: 0.9rem;
