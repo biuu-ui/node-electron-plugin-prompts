@@ -9,7 +9,7 @@
 
 <br />
 
-This library is packaged with [ntfy-desktop](https://github.com/Aetherinox/ntfy-desktop)
+This node package was originally developed for [Ntfy Desktop](https://github.com/Aetherinox/ntfy-desktop)
 
 </p>
 
